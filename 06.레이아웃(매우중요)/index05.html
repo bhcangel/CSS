@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .outer{
+            width: 30%;
+            border: 1px solid #777777;
+            overflow: hidden;
+        }
+        .mid{
+            border: 1px solid #777777;
+            float: left;
+            padding: 20px;
+            width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .inner{
+            border: 1px solid #777777;
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .bottom{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div>탑</div>
+        <div class="mid">
+            <div class="mid-inner">
+                <div class="inner">중간 패딩 위아래 20px</div>
+                <div class="inner">중간 패딩 위아래 20px</div>
+            </div>
+        </div>
+        <div class="bottom">바텀</div>
+    </div>
+</body>
+</html>

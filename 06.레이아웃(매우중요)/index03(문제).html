@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .list{
+            overflow: hidden;
+            margin: 0 auto;
+            width: 20%;
+            border: 1px solid #777;
+        }
+
+        .left, .right{
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .title{
+            padding-bottom: 30px;
+        }
+
+        .right{
+            border: 1px solid #777;
+        }
+
+        .control{
+            overflow: hidden;
+        }
+
+        .control button {
+            width: 50%;
+        }
+
+        .p-left{
+            float: left;
+        }
+
+        .p-right{
+            float: right;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div class="left">사진</div>
+        <div class="right">
+            <div class="title">
+            <div>제목</div>
+            <div>내용</div>
+            </div>
+
+            <div class="control">
+                <div class="p-left">가격</div>
+                <div class="p-right">10000원</div>
+            </div>
+
+            <div class="control">
+                
+                <input class="p-left" type = "button" value="장바구니">
+                <input class="p-right" type = "button" value="장바구니">
+
+            </div>
+
+        </div>
+        
+
+    </div>
+</body>
+</html>
