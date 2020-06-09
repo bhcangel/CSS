@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        .my-grid{
+            margin: 0 auto;
+            /* 가운데 정렬시에 col속성이 전부 float을 들고 있기 때문에 가운데 정렬이 안됨.  */
+            /* float:none 으로 class속성을 새롭게 추가하고 float을 없애줘야 합니다. */
+            float: none;        
+        }
+
+        .my-control{
+            width: 50%;
+            border-radius: 20px;
+            border: 3px solid #000000;
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- 부트스트랩 가운데 정렬 -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-6 my-grid">
+                  <div class="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control my-control" id="usr">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control my-control" id="pwd">
+                  </div>
+                  
+                  <div class="center">
+                    <input type="button" class="btn btn-primary" value="11">
+                    <input type="submit" class="btn btn-info" value="22">
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
