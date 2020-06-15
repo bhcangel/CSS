@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!--가장 아래쪽에 개인디자인을 추가-->
+    <link rel ="stylesheet" href ="css/header02.css">
+    <link rel ="stylesheet" href ="css/style02.css">
+
+    <style>
+        
+
+        /* 디자인시작하기전에 웹폰트와 초기화 선언 */
+        @import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+        * {padding: 0; margin: 0; box-sizing: border-box;}
+        body, html {width : 100%; font-family: 'Merriweather',serif;}
+        img {max-width: 100%; height: auto;}
+        ul, li {list-style: none;}
+        /* 브라우저별로 고유하게 적용되는 form 관련 요소를 제거 */
+        input, textarea, select, button {-moz-appearance: none; -webkit-appearance: none;}
+        .btn {border-radius: 0px; }
+        
+        /* 해더 */
+        .container-fluid{padding:0px;}
+        header{position:fixed; top:0; left:0; z-index: 10; width:100%; overflow: hidden;
+        background-color:white;}
+        .nav-box{text-align: center; padding:15px 0; background-color: #444444; margin:0;}
+        .nav-box li{display:inline;}
+        .nav-box li a{display:inline-block;padding:0 20px; color:#fff;}
+        .logo-box{text-align: center; padding:10px;}
+        .logo-box h1{display: inline; font-size:100px; font-family: inherit;}
+        .logo-box ul li{display: inline;}
+        .logo-box ul li a{display: inline-block; color:#555555; padding:10px;}
+        .logo-box{position: relative;}
+        .logo-box .login-box{position: absolute; top:0; right: 0;}
+        /*섹션*/
+        section{margin-top:180px; margin-bottom:50px;}
+        .section1{position: relative; padding:0;}
+        .section1 .text1{position: absolute; top:0; right:15px; text-align: center;}
+        .section1 .text1 h1{font-size:36px;}
+        .section1 .text1 p{font-size:18px;}
+        .section1 .text1 h1,.section1 .text1 p{color:white; background-color: rgba(0,0,0,0.3); padding:15px 20px;}
+        
+        
+        .section2{width:960px; margin:0 auto;}
+        .section2 li{display: inline-block; overflow: hidden;}
+
+        .quick_area {
+            position : fixed;
+            top: 500px;
+            right: 0px;
+            width: 100px;
+            z-index: 100;
+        }
+
+        .quick_area li {
+            text-align: center;
+            background-color: #282828;
+            font-size: 15px;
+        }
+
+        .quick_area li a {
+            display: block;
+            padding: 15px 0;
+            border-top: 1px solid #4d4d4d;
+            color: white;
+            font-size: 12px;
+            line-height: 1.3;
+            letter-spacing: -1px;
+            padding-bottom: 10px;
+        }
+        
+        
+        .hover-content{position: relative; }
+        .section2 .jaket{position: absolute; background-color: rgba(0,0,0,0.6); top:0;left:0; height: 100%;width:100%; text-align: center; opacity: 0;}
+        .section2 .jaket a{height:100%;width:100%;display: inline-block; color:white;font-size:18px; }
+        .section2 .jaket a:hover .section2 .jaket{opacity:1;}
+        .img-content{padding:5px;}
+       
+
+    </style>
+
+</head>
+<body>
+    <header>
+        
+        <div class="container-fluid">
+            <div class="logo-box">
+                <h1>ZARA</h1>
+                <div class="login-box">
+                    <ul>
+                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#">REGISTER</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-box">
+                    <li><a href="#">WOMAN</a></li>
+                    <li><a href="#">TRF</a></li>
+                    <li><a href="#">MAN</a></li>
+                    <li><a href="#">KIDS</a></li>
+                    <li><a href="#">EDITORIALS</a></li>
+                </ul>
+            </nav>
+        </div>
+            
+</header>
+
+<aside class="quick_area">
+    <ul class="quick_list">
+        <li>
+            <a href>
+                <h3>전화문의</h3>
+                <p>010-1234-5678</p>
+            </a>
+        </li>
+        <li>
+            <a href>
+                <h3>카카오톡</h3>
+                <p>1:1 상담</p>
+            </a>
+        </li>
+        <li>
+            <a href>
+                <h3>오시는길</h3>
+            </a>
+        </li>
+    </ul>
+</aside>
+
+    <section>
+        <div class="container section1">
+            <div class="row">
+              <div class="col-sm-12 section1">
+                <img src="img/main.jpg">
+                <div class="text1">
+                    <h1>Category Bannner</h1>
+                    <p>Upload image and description</p>
+                    <p>Upload image and description</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+
+    
+    <section class="section2">
+        
+        <ul>
+            <div class="col-sm-3 img-content">
+                <li>
+                <div class="hover-content">
+                    <div class="img-box">
+
+                        
+                        <img src="img/img_01.jpg">
+                        <h2>Product with Variants</h2>
+                        <h3>★★★☆☆ 
+                            <span>2REVIEW(S)</span>
+                            <br>$59.00
+                        </h3>
+                    </div>
+                    <div class="jaket">
+                        <a href="#"><b>jaket</b></a>
+                    </div>
+                </div>
+                </li>
+            </div>
+            <div class="col-sm-3 img-content">
+                <li>
+                <div class="hover-content">
+                    <div class="img-box">
+
+                        
+                        <img src="img/img_02.jpg">
+                        <h2>Product with Variants</h2>
+                        <h3>★★★☆☆ 
+                            <span>2REVIEW(S)</span>
+                            <br>$59.00
+                        </h3>
+                    </div>
+                    <div class="jaket">
+                        <a href="#"><b>jaket</b></a>
+                    </div>
+                </div>
+                </li>
+            </div>
+            <div class="col-sm-3 img-content">
+                <li>
+                <div class="hover-content">
+                    <div class="img-box">
+
+                        <img src="img/img_03.jpg">
+                        <h2>Product with Variants</h2>
+                        <h3>★★★☆☆ 
+                            <span>2REVIEW(S)</span>
+                            <br>$59.00
+                        </h3>
+                    </div>
+                    <div class="jaket">
+                        <a href="#"><b>jaket</b></a>
+                    </div>
+                </div>
+                </li>
+            </div>
+            <div class="col-sm-3 img-content">
+                <li>
+                <div class="hover-content">
+                    <div class="img-box">
+
+                        
+                        <img src="img/img_04.jpg">
+                        <h2>Product with Variants</h2>
+                        <h3>★★★☆☆ 
+                            <span>2REVIEW(S)</span>
+                            <br>$59.00
+                        </h3>
+                    </div>
+                    <div class="jaket">
+                        <a href="#"><b>jaket</b></a>
+                    </div>
+                </div>
+                </li>
+            </div>
+
+            <div class="col-sm-3 img-content">
+                <li>
+                <div class="hover-content">
+                    <div class="img-box">
+
+                        
+                        <img src="img/img_05.jpg">
+                        <h2>Product with Variants</h2>
+                        <h3>★★★☆☆ 
+                            <span>2REVIEW(S)</span>
+                            <br>$59.00
+                        </h3>
+                    </div>
+                    <div class="jaket">
+                        <a href="#"><b>jaket</b></a>
+                    </div>
+                </div>
+                </li>
+            </div>
+
+            <div class="col-sm-3 img-content">
+                <li>
+                <div class="hover-content">
+                    <div class="img-box">
+
+                        
+                        <img src="img/img_06.jpg">
+                        <h2>Product with Variants</h2>
+                        <h3>★★★☆☆ 
+                            <span>2REVIEW(S)</span>
+                            <br>$59.00
+                        </h3>
+                    </div>
+                    <div class="jaket">
+                        <a href="#"><b>jaket</b></a>
+                    </div>
+                </div>
+                </li>
+            </div>
+
+            <div class="col-sm-3 img-content">
+                <li>
+                <div class="hover-content">
+                    <div class="img-box">
+
+                        
+                        <img src="img/img_07.jpg">
+                        <h2>Product with Variants</h2>
+                        <h3>★★★☆☆ 
+                            <span>2REVIEW(S)</span>
+                            <br>$59.00
+                        </h3>
+                    </div>
+                    <div class="jaket">
+                        <a href="#"><b>jaket</b></a>
+                    </div>
+                </div>
+                </li>
+            </div>
+
+            <div class="col-sm-3 img-content">
+                <li>
+                <div class="hover-content">
+                    <div class="img-box">
+
+                        
+                        <img src="img/img_08.jpg">
+                        <h2>Product with Variants</h2>
+                        <h3>★★★☆☆ 
+                            <span>2REVIEW(S)</span>
+                            <br>$59.00
+                        </h3>
+                    </div>
+                    <div class="jaket">
+                        <a href="#"><b>jaket</b></a>
+                    </div>
+                </div>
+                </li>
+            </div>
+
+        </ul>
+
+    </section>
+
+    
+</body>
+</html>

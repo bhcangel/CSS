@@ -17,6 +17,12 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
+        .myinfo .tab-style {
+            background-color:lightsteelblue;
+        } 
+        .nav-tabs > li.active > a:hover{
+            background-color: red;
+        }
         .nav-tabs a {
             background-color: #607D8B;
             color: #ffffff;
@@ -25,6 +31,25 @@
         .nav-tabs li a:hover {
             background-color: black;
         }
+
+        .table .sel{
+            width: 200px;
+        }
+        .m-control .sel, .m-control .sel2{
+            width: 180px;
+            display: inline-block;      /*인라인으로 배치하고 블럭성질을 갖는다*/
+        }
+
+        .table .email{
+            display: inline;
+        }
+
+        .table .email-block{
+            display: block;
+        }
+
+
+        
     </style>
 
 </head>
@@ -40,7 +65,7 @@
                         <h2>Dynamic Tabs</h2>
                         <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
                       
-                        <ul class="nav nav-tabs">
+                        <ul class="nav nav-tabs tab-style">
                           <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
                           <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
                           <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
@@ -49,82 +74,54 @@
                       
                         <div class="tab-content">
                           <div id="home" class="tab-pane fade in active">
-                            <h3>HOME</h3>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-9 col-lg-6 join-form">
-                                        <div class="titlebox">회원가입</div>
-                    
-                                        <form action="">
-                                            <!-- 우측에 버튼달린 인풋 -->
-                                            <div class="form-group">
-                                                <label>아이디</label>
-                                                <div class="input-group">   
-                                                    <input type="text" class="form-control" placeholder="아이디 입력">
-                                                    <div class="input-group-btn">
-                                                        <button class="btn btn-info" type="submit">아이디중복체크</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                    
-                                            <div class="form-group">
-                                                <label>비밀번호</label>
-                                                <input type="password" class="form-control" placeholder="비밀번호 영 대/소문자 숫자조합 8~16자">
-                                            </div>
-                    
-                                            <div class="form-group">
-                                                <label>비밀번호 확인</label>
-                                                <input type="password" class="form-control" placeholder="비밀번호를 확인해주세요">
-                                            </div>
-                    
-                                            <div class="form-group">
-                                                <label>이름</label>
-                                                <input type="password" class="form-control" placeholder="이름을 입력하세요">
-                                            </div>
-                    
-                                            <!-- 우측에 버튼달린 인풋 -->
-                                            <div class="form-group">
-                                                <label>핸드폰번호</label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="핸드폰번호">
-                                                    <div class="input-group-btn">
-                                                        <button class="btn btn-info">본인인증</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                    
-                                            <!-- 우측에 버튼달린 인풋 -->
-                                            <div class="form-group">
-                                                <label>주소</label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="우편번호">
-                                                    <div class="input-group-btn">
-                                                        <button class="btn btn-info">주소찾기</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                    
-                                            <div class="form-group">
-                                                <label>기본주소</label>
-                                                <input type="password" class="form-control" placeholder="기본주소">
-                                            </div>
-                    
-                                            <div class="form-group">
-                                                <label>상세주소</label>
-                                                <input type="password" class="form-control" placeholder="상세주소">
-                                            </div>
-                    
-                                            <div class="form-group">
-                                                <button type="button" class="btn btn-primary btn-lg">회원가입</button>
-                                            </div>
-                    
-                                            <div class="form-group">
-                                                <button type="button" class="btn btn-danger btn-lg">로그인</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+                            <p>*표시는 필수 사항입니다</p>
+                                <form class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>*ID</td>
+                                            <td><input type="text" class="form-control sel"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>*비밀번호</td>
+                                            <td><input type="text" class="form-control sel"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>*비밀번호 확인</td>
+                                            <td><input type="text" class="form-control sel"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email-block">*이메일</td>
+                                            <td><input type="text" class="form-control sel email"></td>
+                                            @
+                                            
+                                            <td><input type="text" class="form-control sel"></td>
+                                        </tr>
+                                        
+
+                                        <tr>
+                                            <td>*우편번호</td>
+                                            <td><input type="text" class="form-control sel"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>*주소</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>*상세주소</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        
+                                        <div class="a21">
+                                        <button class="a21">asdds</button>
+                                        </div>
+                                    </tbody>
+                                </form>
+
+
+
                           </div>
                           <div id="menu1" class="tab-pane fade">
                             <h3>Menu 1</h3>
